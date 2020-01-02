@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center_horizontal"
+    android:background="@drawable/gradient_background"
+  >
+
+    <ScrollView
+        android:id="@+id/login_form"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="35dp">
+
+        <LinearLayout
+            android:id="@+id/email_login_form"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingTop="@dimen/activity_vertical_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:paddingBottom="10dp"
+            android:orientation="vertical">
+            <requestFocus/>
+
+
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/logo2"
+                    app:layout_gravity="center"
+                    android:contentDescription="HELLO" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Selamat datang di YARSI MONITORING MOBILE."
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="serif"
+                tools:ignore="HardcodedText" />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <AutoCompleteTextView
+                    android:id="@+id/txtusername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Username"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/txtpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Password"
+                    android:imeActionId="6"
+                    android:imeOptions="actionUnspecified"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <com.loopeer.shadow.ShadowView
+                android:layout_marginTop="18dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:shadowMargin="5dp"
+                android:elevation="5dp"
+                app:cornerRadius="2dp"
+                app:shadowColor="@color/backgroundColor2"
+                app:backgroundColor="@android:color/white"
+                app:shadowRadius="3dp">
+
+            <TextView
+                android:id="@+id/btnLogin"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:text="lOGIN"
+                android:textStyle="bold" />
+
+            </com.loopeer.shadow.ShadowView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="forgot password?"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:padding="5dp"
+                android:layout_gravity="end"/>
+
+            <!--or-->
+            <LinearLayout
+                android:id="@+id/or_layout"
+                android:layout_width="match_parent"
+                android:layout_marginTop="30dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="110dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#b4b4b4"
+                    android:layout_height="0.5dp"/>
+
+
+                <View
+                    android:layout_width="110dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="#b4b4b4"
+                    android:layout_height="0.5dp"/>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+      </ScrollView>
+
+
+    <com.wang.avi.AVLoadingIndicatorView
+        android:id="@+id/login_loader"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        style="@style/AVLoadingIndicatorView"
+        app:indicatorName="BallPulseIndicator"
+        android:layout_centerInParent="true"
+        android:visibility="invisible"
+        app:indicatorColor="@android:color/white"/>
+
+</RelativeLayout>

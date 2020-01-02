@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/blue"
+    android:orientation="horizontal"
+    android:padding="5dip" >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="3dip"		
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg"
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_imagelkp"   
+	        android:layout_width="50dip"
+	        android:layout_height="50dip"
+	        android:src="@mipmap/ic_krsdetail"/>
+        
+	</LinearLayout>
+    
+	<!-- Deskripsi LP2M ARAY-->
+
+    <TextView
+        android:id="@+id/txtNamalkp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Semester"
+        android:textColor="#fff"
+        android:textSize="15dip"
+        android:textStyle="bold"
+        android:typeface="sans" />
+
+	<!-- Judul LP2M ARAY-->
+
+    <TextView
+        android:id="@+id/txtDeskripsilkp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtNamalkp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text=""
+        android:textColor="#343434"
+        android:textSize="10dip"
+        android:textStyle="bold" />
+
+	<!-- Bar LP2M ARAY -->
+
+    <TextView
+        android:id="@+id/kode_k"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/txtNamalkp"
+        android:layout_marginRight="5dip"
+        android:gravity="right"
+        android:text="5:45"
+        android:textColor="#000"
+        android:textSize="10dip"
+        android:textStyle="bold"
+		android:visibility="gone" />
+      
+     <!-- Rightend Arrow -->    
+     <ImageView android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrow"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+
+</RelativeLayout>

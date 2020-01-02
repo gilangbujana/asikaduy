@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.asikaduy.aplikasimonitoringakademikuniversitasyarsi">
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+   <uses-permission-sdk-23 android:name="android.permission.INTERNET"></uses-permission-sdk-23>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/matkul"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".KHS" />
+        <activity android:name=".BarChartActivity" />
+        <activity android:name=".Profil" />
+        <activity android:name=".Dosen" />
+        <activity android:name=".Menuutama" />
+        <activity android:name=".DosenList" />
+        <activity android:name=".KhsActivity"/>
+        <activity android:name=".Nilai_DetailListNilai" />
+        <activity android:name=".Matkul" />
+        <activity android:name=".MatkulList" />
+        <activity android:name=".Krs" />
+        <activity android:name=".KrsList" />
+        <activity android:name=".ListSmt" />
+        <activity android:name=".Nilai" />
+        <activity android:name=".NilaiList" />
+        <activity android:name=".Tahun_Akademik" />
+        <activity android:name=".Tahun_AkademikList" />
+        <activity android:name=".Nilai_Detail" />
+        <activity android:name=".Nilai_DetailList" />
+        <activity android:name=".Pengumuman" />
+        <activity android:name=".PengumumanList" />
+        <activity android:name=".Graph" />
+    </application>
+
+</manifest>
