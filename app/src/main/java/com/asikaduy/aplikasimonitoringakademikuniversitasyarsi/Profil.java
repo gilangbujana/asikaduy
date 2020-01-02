@@ -152,8 +152,8 @@ public class Profil extends Activity {
 				String lalamat= txtalamat.getText().toString();
 
 				if(lpassword.length()<1){lengkapi("Password");}
-			else{
-					new update().execute();
+				else{
+					new update2().execute();
 				}
 			}});
 
