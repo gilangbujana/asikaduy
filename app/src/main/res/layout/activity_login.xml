@@ -102,7 +102,7 @@
                 android:textAlignment="center"
                 android:gravity="center"
                 android:textColor="@color/colorPrimary"
-                android:text="lOGIN"
+                android:text="LOGIN"
                 android:textStyle="bold" />
 
             </com.loopeer.shadow.ShadowView>

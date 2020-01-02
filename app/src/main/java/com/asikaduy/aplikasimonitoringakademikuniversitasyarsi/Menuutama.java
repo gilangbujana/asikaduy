@@ -157,6 +157,7 @@ public class Menuutama extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                session.logout();
+               finish();
                 //startActivity(i);
             }
         });

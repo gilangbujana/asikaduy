@@ -50,6 +50,10 @@ public class Login extends AppCompatActivity {
         StrictMode.setThreadPolicy(policy);
 
         session = new SessionManager(getApplicationContext());
+        if(session.isLoggedIn()){
+            startActivity(new Intent(this, Menuutama.class));
+            finish();
+        }
         txtusername=(EditText)findViewById(R.id.txtusername);
         txtpassword=(EditText)findViewById(R.id.txtpassword);
 
