@@ -195,8 +195,8 @@ public class KhsActivity extends AppCompatActivity {
             tv_jmlsksltl.setText(String.valueOf(jmlsksl)+"/"+String.valueOf(jmlskstl));
             tv_jmlmkltl.setText(String.valueOf(jmlmkl)+"/"+String.valueOf(jmlmktl));
             tv_jn.setText(String.valueOf(totalnilai));
-            tv_ips.setText(String.format("2f", ips));
-            tv_ipk.setText(String.format("2f", ipk));
+            tv_ips.setText(String.format("%.2f", ips));
+            tv_ipk.setText(String.format("%.2f", ipk));
             //tv_ipk.setText(pesan);
         }
     }

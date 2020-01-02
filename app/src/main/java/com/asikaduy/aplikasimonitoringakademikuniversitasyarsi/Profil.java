@@ -96,12 +96,12 @@ public class Profil extends Activity {
 		txttempat_lahir= (EditText) findViewById(R.id.txttempat_lahir);txttempat_lahir.setEnabled(false);
 		txttanggal_lahir= (EditText) findViewById(R.id.txttanggal_lahir);txttanggal_lahir.setEnabled(false);
 		txtkewarganegaraan = (EditText) findViewById(R.id.txtkewarganegaraan);txtkewarganegaraan.setEnabled(false);
-		txtalamat= (EditText) findViewById(R.id.txtalamat);txtalamat.setEnabled(false);
-		txtno_telp= (EditText) findViewById(R.id.txtno_telp);txtno_telp.setEnabled(false);
+		txtalamat= (EditText) findViewById(R.id.txtalamat);txtalamat.setEnabled(true);
+		txtno_telp= (EditText) findViewById(R.id.txtno_telp);txtno_telp.setEnabled(true);
 		txtemail= (EditText) findViewById(R.id.txtemail);txtemail.setEnabled(false);
 		txtusername= (EditText) findViewById(R.id.txtusername);txtusername.setEnabled(false);
 		txtpassword= (EditText) findViewById(R.id.txtpassword);
-		txtalamat= (EditText) findViewById(R.id.txtalamat);txtalamat.setEnabled(false);
+		txtalamat= (EditText) findViewById(R.id.txtalamat);txtalamat.setEnabled(true);
 		txtid_dosen= (EditText) findViewById(R.id.txtid_dosen);txtid_dosen.setEnabled(false);
 
 
@@ -163,7 +163,7 @@ public class Profil extends Activity {
 			finish();
 			}});
 
-		btnProses.setText("Ubah Password");
+		btnProses.setText("Perbarui Profil");
 		btnHapus.setText("Kembali");
 
 	}
